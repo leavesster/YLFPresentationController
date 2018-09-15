@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YLFPresentationController_Example' do
+  pod 'YLFPresentationController', :path => '../'
+
+  target 'YLFPresentationController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
