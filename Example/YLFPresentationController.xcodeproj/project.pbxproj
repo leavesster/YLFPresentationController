@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02AF1CC3424F54A830A1C395 /* Pods_YLFPresentationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E59A41E9665395C88D1004CA /* Pods_YLFPresentationController_Tests.framework */; };
+		39D18B87214D3F3600E1B2EC /* YLFPresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D18B86214D3F3600E1B2EC /* YLFPresentedViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		3699D3F5F3F9A2E8ECC87C41 /* Pods-YLFPresentationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLFPresentationController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLFPresentationController_Tests/Pods-YLFPresentationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		39D18B85214D3F3600E1B2EC /* YLFPresentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLFPresentedViewController.h; sourceTree = "<group>"; };
+		39D18B86214D3F3600E1B2EC /* YLFPresentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLFPresentedViewController.m; sourceTree = "<group>"; };
 		5678FF12D800EB5788D373CC /* Pods_YLFPresentationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLFPresentationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D868FF9D694C42E2F511426 /* YLFPresentationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YLFPresentationController.podspec; path = ../YLFPresentationController.podspec; sourceTree = "<group>"; };
+		5D868FF9D694C42E2F511426 /* YLFPresentationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YLFPresentationController.podspec; path = ../YLFPresentationController.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YLFPresentationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YLFPresentationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +67,8 @@
 		8DB258BD3144ABDF5CB1DDD7 /* Pods-YLFPresentationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLFPresentationController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLFPresentationController_Example/Pods-YLFPresentationController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8EF811467F6D12C6C57035A7 /* Pods-YLFPresentationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLFPresentationController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YLFPresentationController_Example/Pods-YLFPresentationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6B584274B5C0796C66BAB1 /* Pods-YLFPresentationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLFPresentationController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YLFPresentationController_Tests/Pods-YLFPresentationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AFED6912A6A92649E4EA8E51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DEFF7D0AE390F024F75CD14C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AFED6912A6A92649E4EA8E51 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DEFF7D0AE390F024F75CD14C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E59A41E9665395C88D1004CA /* Pods_YLFPresentationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLFPresentationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,9 +137,11 @@
 			children = (
 				6003F59C195388D20070C39A /* YLFAppDelegate.h */,
 				6003F59D195388D20070C39A /* YLFAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YLFViewController.h */,
 				6003F5A6195388D20070C39A /* YLFViewController.m */,
+				39D18B85214D3F3600E1B2EC /* YLFPresentedViewController.h */,
+				39D18B86214D3F3600E1B2EC /* YLFPresentedViewController.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -358,6 +363,7 @@
 				6003F59E195388D20070C39A /* YLFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YLFViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				39D18B87214D3F3600E1B2EC /* YLFPresentedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
