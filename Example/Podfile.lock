@@ -1,0 +1,16 @@
+PODS:
+  - YLFPresentationController (0.1.0)
+
+DEPENDENCIES:
+  - YLFPresentationController (from `../`)
+
+EXTERNAL SOURCES:
+  YLFPresentationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YLFPresentationController: 893d1093ee10b376cf3d99442126f701d4184ca2
+
+PODFILE CHECKSUM: d2c891dce81ee9366c549d183fa3f9d28ddbd5b8
+
+COCOAPODS: 1.5.3
