@@ -32,6 +32,10 @@ target 'Demo' do
 end
 ```
 
+## TODO
+
+- [ ] support custom transition
+
 ## Reference
 
 * Blog
