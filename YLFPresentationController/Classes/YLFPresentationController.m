@@ -62,10 +62,10 @@
 
 - (CGFloat)presentedViewHeight
 {
-    if ([self.customPresentationDelegate respondsToSelector:@selector(presentedViewHeight)]) {
+    if ([self.customPresentationDelegate respondsToSelector:@selector(presentedViewHeight)] && [self.customPresentationDelegate presentedViewHeight] > 0) {
         return [self.customPresentationDelegate presentedViewHeight];
     }
-    return CGRectGetHeight(self.containerView.bounds) * [self presentedViewRatio];
+    return CGRectGetHeight(self.containerView.bounds) * fminf(fmaxf([self presentedViewRatio], 0), 1);
 }
 
 #pragma mark - Private

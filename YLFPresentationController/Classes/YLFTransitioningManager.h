@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef CGFloat(^YLFTransitioningManagerBlock)(void);
+
 @interface YLFTransitioningManager : NSObject<UIViewControllerTransitioningDelegate>
 
 - (instancetype)initWithViewController:(UIViewController *)vc;
@@ -23,6 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, strong) UIView *presentedHeaderView;
 @property (nullable, nonatomic, strong) UIView *presentedFooterView;
+
+@property (nonatomic, copy) YLFTransitioningManagerBlock heightBlock;
+@property (nonatomic, copy) YLFTransitioningManagerBlock raitoBlock;
 
 @end
 

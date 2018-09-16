@@ -32,7 +32,18 @@
 #pragma mark - YLFPresentationProtocol
 - (CGFloat)presentedViewRatio
 {
+    if (self.raitoBlock) {
+        return self.raitoBlock();
+    }
     return 2.0 / 3.0;
+}
+
+- (CGFloat)presentedViewHeight
+{
+    if (self.heightBlock) {
+        return self.heightBlock();
+    }
+    return 0;
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate
