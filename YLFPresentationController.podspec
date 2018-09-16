@@ -9,20 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'YLFPresentationController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YLFPresentationController.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'A lightweight controller implemented for present half or overlay view controller.'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    support present view controller with header and footer, and with your own animation transition
                        DESC
 
   s.homepage         = 'https://github.com/leavesster/YLFPresentationController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.author 	         = 'leavesster'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.source           = { :git => 'https://github.com/leavesster/YLFPresentationController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
