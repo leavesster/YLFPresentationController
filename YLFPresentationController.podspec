@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YLFPresentationController'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A lightweight controller implemented for present half or overlay view controller.'
 
   s.description      = <<-DESC

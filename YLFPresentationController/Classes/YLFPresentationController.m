@@ -137,6 +137,7 @@
         UIView *footerV = [self presentedFooterView];
 
         _customPresentedView = [[UIView alloc] initWithFrame:[self frameOfPresentedViewInContainerView]];
+        _customPresentedView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleWidth;
         CGRect bounds = _customPresentedView.bounds;
         if (headerV) {
             [_customPresentedView addSubview:headerV];
@@ -210,6 +211,7 @@
 - (void)containerViewDidLayoutSubviews
 {
     [super containerViewDidLayoutSubviews];
+    self.customPresentedView.frame = [self frameOfPresentedViewInContainerView];
 }
 
 
